@@ -1,9 +1,5 @@
-$button-bg-color: #111;
-$button-border-color: #00fff2;
-$button-text-color: #fff;
-$button-hover-bg-color: #333;
-$button-hover-border-color: #ff00ff;
-$button-hover-text-color: #00ff00;
+@use '../../styles/partials/typography'as *; 
+@use '../../styles/partials/variable' as *;
 
 .categoryName{
     border: 2px solid $button-border-color;
@@ -11,16 +7,18 @@ $button-hover-text-color: #00ff00;
     font-size: 1.5rem;
     margin: 1rem;
     padding: 2rem;
+    width: 23rem;
 
 }
 .price-button {
+    font-family: 'Price';
     background-color: $button-bg-color;
     border: 2px solid $button-border-color;
     color: $button-text-color;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    margin: 2.5rem;
+    margin: 1rem;
     transition: background-color 0.3s, border-color 0.3s, color 0.3s;
 
     &:hover {
