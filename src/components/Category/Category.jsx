@@ -6,7 +6,7 @@ const Category = ({ categoryData }) => {
     return (
         <>
             <section>
-                <header>{categoryData.topic}</header>
+                <header className='categoryName'>{categoryData.topic}</header>
                 {categoryData.questions.map(question => {
                     return (
                     <article className='price-button' key={question.points}>
