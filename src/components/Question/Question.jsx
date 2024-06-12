@@ -1,5 +1,5 @@
 import React from 'react';
-import './Question.scss'
+import './Question.scss';
 
 const Question = ({trivia}) => {
 

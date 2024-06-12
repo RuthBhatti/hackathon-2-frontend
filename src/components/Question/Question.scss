@@ -1,7 +1,26 @@
-@import '../../styles/typography'
+@use '../../styles/partials/typography' as *;
 
 .question {
     &__header {
-        font: 'Jeopardy';
+        font-family: 'Jeopardy';
+    }
+
+    &__answers {
+        width: 45rem;
+        height: 10rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .question__answer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20rem;
+            list-style-type: none;
+            border: 2px solid;
+            height: 3rem;
+        }
     }
 }
