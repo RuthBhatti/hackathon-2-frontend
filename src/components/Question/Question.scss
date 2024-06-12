@@ -8,6 +8,7 @@
 
     &__answers {
         width: 45rem;
+        margin: 0 auto;
         height: 10rem;
         display: flex;
         flex-wrap: wrap;
@@ -22,6 +23,22 @@
             list-style-type: none;
             border: 2px solid;
             height: 3rem;
+
+            font-family: 'Price';
+            background-color: $button-bg-color;
+            border: 2px solid $button-border-color;
+            color: $button-text-color;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 1rem;
+            transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+        
+            &:hover {
+                background-color: $button-hover-bg-color;
+                border-color: $button-hover-border-color;
+                color: $button-hover-text-color;
+            }
         }
     }
 }
