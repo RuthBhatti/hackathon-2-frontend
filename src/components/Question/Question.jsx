@@ -1,17 +1,29 @@
 import React from 'react';
 import './Question.scss';
 
-const Question = ({trivia}) => {
+const Question = ({ questionInfo, trivia }) => {
+
+    if (!questionInfo) {
+        return (
+            <p></p>
+        )
+    }
+
+    const currentCat = trivia.find((category) => category.uuid === questionInfo.split('+')[0]);
+
+    const currentQ = currentCat && currentCat.questions.find((question) => question.points === questionInfo.split('+')[1])
+    console.log(currentQ)
 
     return (
         <div className="question">
             <h2 className='question__header'>Question</h2>
-            <p className='question__question'>What is my name?</p>
+            <p className='question__question'>{currentQ?.question && currentQ?.question}</p>
             <ul className='question__answers'>
-                <li className='question__answer'>Answer A</li>
-                <li className='question__answer'>Answer B</li>
-                <li className='question__answer'>Answer C</li>
-                <li className='question__answer'>Answer D</li>
+                {currentQ?.options && currentQ?.options.map((answer) => {
+                    return (
+                        <li className='question__answer'>{answer}</li>
+                    )
+                })}
             </ul>
         </div>
     );

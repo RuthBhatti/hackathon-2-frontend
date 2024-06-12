@@ -7,14 +7,9 @@ import { useParams } from "react-router-dom";
 
 const HomePage = () => {
   
-  const [question, setQuestion] = useState();
+  const [question, setQuestion] = useState({});
   const { questionInfo } = useParams();
   const [trivia, setTrivia] = useState([]);
-
-  const currentCat = trivia.find((category) => category.uuid === questionInfo.split('+')[0]);
-  console.log(currentCat)
-  const currentQ = currentCat && currentCat.questions.find((question) => question.points === questionInfo.split('+')[1])
-  
 
   const getTriviaData = async () => {
     try {
@@ -38,8 +33,8 @@ const HomePage = () => {
 
   return (
     <>
-      <Board trivia={trivia}></Board>
-      <Question trivia={trivia} currentQ={currentQ}></Question>
+      <Board trivia={trivia} setQuestion={setQuestion}></Board>
+      <Question trivia={trivia} questionInfo={questionInfo}></Question>
     </>
   );
 };
