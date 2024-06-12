@@ -5,7 +5,6 @@ const Category = ({ data }) => {
 
     return (
         <>
-
             <section>
                 <header>categoryName</header>
                 <article className='price-button'>
