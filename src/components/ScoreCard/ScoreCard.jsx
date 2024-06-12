@@ -1,11 +1,9 @@
-// import React from 'react';
+import React from 'react';
 
-// const ScoreCard = ({ score }) => {
-//     return (
-//         <div className="scorecard">
-//             <h2>Current Score: ${score}</h2>
-//         </div>
-//     );
-// };
+return (
+    <div className="scorecard">
+        <h2>Current Score </h2>
+    </div>
+);
 
-// export default ScoreCard;
+export default ScoreCard;
