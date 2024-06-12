@@ -5,7 +5,6 @@ const Category = ({ categoryData }) => {
 
     return (
         <>
-
             <section>
                 <header>{categoryData.topic}</header>
                 {categoryData.questions.map(question => {
