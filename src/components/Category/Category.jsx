@@ -10,7 +10,7 @@ const Category = ({ categoryData }) => {
         {categoryData.questions.map((question) => {
           return (
             <Link
-              to={`/${categoryData.uuid}?${question.points}`}
+              to={`/${categoryData.uuid}+${question.points}`}
               key={question.points}
             >
               <article className="price-button">
