@@ -1,9 +1,10 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.scss'
 import Board from './components/Board/Board'
 import Question from './components/Question/Question'
+import axios from 'axios'
 
 function App() {
   const [trivia, setTrivia] = useState([])
