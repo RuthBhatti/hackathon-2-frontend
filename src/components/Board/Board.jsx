@@ -1,18 +1,20 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
+import React from 'react';
+import Category from '../Category/Category';
 
-// const Board = ({ categories }) => {
-//     return (
-//         <div className="board">
-//             {categories.map((category, index) => (
-//                 <div key={index} className="category-link">
-//                     <Link to={`/category/${category.name}`}>
-//                         {category.name}
-//                     </Link>
-//                 </div>
-//             ))}
-//         </div>
-//     );
-// };
+const Board = () => {
+    return (
+        <>
+            <header>
+                <h1>NAME</h1>
+            </header>
+            <div>
+                <Category></Category>
+                <Category></Category>
+                <Category></Category>
+                <Category></Category>
+            </div>
+        </>
+    );
+};
 
-// export default Board;
+export default Board;

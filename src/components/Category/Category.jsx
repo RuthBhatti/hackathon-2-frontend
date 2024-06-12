@@ -1,22 +1,29 @@
-// import React from 'react';
-// import { Link, useParams } from 'react-router-dom';
+import React from 'react';
 
-// const Category = ({ categories }) => {
-//     const { name } = useParams();
-//     const category = categories.find(cat => cat.name === name);
+const Category = ({data}) => {
 
-//     return (
-//         <div className="category">
-//             <h2>{category.name}</h2>
-//             {category.questions.map((q, index) => (
-//                 <div key={index} className="question-link">
-//                     <Link to={`/question/${category.name}/${index}`}>
-//                         ${q.value}
-//                     </Link>
-//                 </div>
-//             ))}
-//         </div>
-//     );
-// };
+    return (
+        <>
+        <header>categoryName</header>
+        <section>
+            <article>
+                <h2>$200.00</h2>
+            </article>
+            <article>
+                <h2>$400.00</h2>
+            </article>
+            <article>
+                <h2>$600.00</h2>
+            </article>
+            <article>
+                <h2>$800.00</h2>
+            </article>
+            <article>
+                <h2>$1000.00</h2>
+            </article>
+        </section>
+        </>
+    )
+};
 
-// export default Category;
+export default Category;
