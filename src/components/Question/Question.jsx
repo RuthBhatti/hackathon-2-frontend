@@ -1,14 +1,16 @@
 import React from 'react';
 
-const Question = () => {
+const Question = ({trivia}) => {
 
     return (
         <div className="question">
             <h2>Question</h2>
-            <li>Answer A</li>
-            <li>Answer B</li>
-            <li>Answer C</li>
-            <li>Answer D</li>
+            <ul>
+                <li>Answer A</li>
+                <li>Answer B</li>
+                <li>Answer C</li>
+                <li>Answer D</li>
+            </ul>
         </div>
     );
 }

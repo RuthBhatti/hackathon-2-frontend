@@ -4,21 +4,8 @@ import Category from '../Category/Category';
 import axios from 'axios';
 
 
-const Board = () => {
-    const [trivia, setTrivia] = useState([])
+const Board = ({trivia}) => {
 
-    const getTriviaData = async () => {
-        try {
-            const res = await axios(`http://localhost:8080/questions`)
-            setTrivia(res.data)
-        } catch (err) {
-            console.log(err)
-        }
-    }
-
-    useEffect(() => {
-        getTriviaData()
-    }, [])
 
     return (
         <>
