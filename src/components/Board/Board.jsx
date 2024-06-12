@@ -1,5 +1,7 @@
 import React from 'react';
+import './Board.scss'
 import Category from '../Category/Category';
+
 
 const Board = () => {
     return (
@@ -7,7 +9,7 @@ const Board = () => {
             <header>
                 <h1>NAME</h1>
             </header>
-            <div>
+            <div className='price-box'>
                 <Category></Category>
                 <Category></Category>
                 <Category></Category>
