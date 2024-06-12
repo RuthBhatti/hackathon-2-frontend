@@ -2,12 +2,13 @@ import { useState, useEffect } from "react";
 import "./HomePage.scss";
 import Board from "../components/Board/Board";
 import Question from "../components/Question/Question";
+import Score from "../components/Score/Score";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 
 const HomePage = () => {
   
-  const [question, setQuestion] = useState({});
+  const [score, setScore] = useState(0);
   const { questionInfo } = useParams();
   const [trivia, setTrivia] = useState([]);
 
@@ -28,13 +29,14 @@ const HomePage = () => {
 
   useEffect(() => {
     console.log('param update')
-  }, [question])
+  }, [score])
 
 
   return (
     <>
-      <Board trivia={trivia} setQuestion={setQuestion}></Board>
-      <Question trivia={trivia} questionInfo={questionInfo}></Question>
+      <Board trivia={trivia} ></Board>
+      <Question trivia={trivia} questionInfo={questionInfo} score={score} setScore={setScore}></Question>
+      <Score score={score}/>
     </>
   );
 };
