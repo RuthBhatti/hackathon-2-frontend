@@ -1,3 +1,9 @@
+@use '../../styles/partials/typography'as *;
+@use '../../styles/partials/variable' as *;
+
+.Title{
+    font-family: 'Jeopardy';
+}
 .price-box{
     display: flex;
 }

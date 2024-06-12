@@ -9,8 +9,8 @@ const Board = ({trivia}) => {
 
     return (
         <>
-            <header>
-                <h1>NAME</h1>
+            <header className='Title'>
+                <h1>Code Crackle Trivia</h1>
             </header>
             <div className='price-box'>
                 {trivia.map(categoryData => {
