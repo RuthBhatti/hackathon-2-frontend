@@ -1,6 +1,9 @@
 @use '../../styles/partials/typography'as *; 
 @use '../../styles/partials/variable' as *;
 
+.category {
+    width: 23rem;
+}
 .categoryName{
     border: 2px solid $button-border-color;
     display: flex;
@@ -29,5 +32,9 @@
         background-color: $button-hover-bg-color;
         border-color: $button-hover-border-color;
         color: $button-hover-text-color;
+    }
+
+    &__text {
+        text-decoration: none;
     }
 }
