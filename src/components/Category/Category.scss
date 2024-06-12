@@ -1,12 +1,12 @@
 $button-bg-color: #111;
-$button-border-color: #00ff00;
+$button-border-color: #00fff2;
 $button-text-color: #fff;
 $button-hover-bg-color: #333;
 $button-hover-border-color: #ff00ff;
 $button-hover-text-color: #00ff00;
 
 .categoryName{
-    border: 2px solid #00ff00;
+    border: 2px solid $button-border-color;
     font-weight: 600;
     font-size: 1.5rem;
     margin: 1rem;
