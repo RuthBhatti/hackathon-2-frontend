@@ -4,11 +4,22 @@
 .question {
     &__header {
         font-family: 'Jeopardy';
+        font-size: 3rem;
+    }
+
+    &__question {
+        font-family: 'Price';
+        background-color: white;
+        color: black;
+        width: fit-content;
+        padding: 1rem;
+        margin: 0 auto;
+        border: 2px solid $button-border-color;
     }
 
     &__answers {
         width: 45rem;
-        margin: 0 auto;
+        margin: 1rem auto;
         height: 10rem;
         display: flex;
         flex-wrap: wrap;

@@ -9,7 +9,7 @@ const Board = ({ trivia, setQuestion }) => {
 return (
 <>
     <header>
-    <h1>NAME</h1>
+        <h1 className="header">HACK-A-PARDY</h1>
     </header>
     <div className="price-box">
     {trivia.map((categoryData) => {

@@ -1,0 +1,12 @@
+@use '../../styles/partials/typography' as *;
+@use '../../styles/partials/variable' as *;
+
+.score {
+    font-family: 'Price';
+    background-color: white;
+    color: black;
+    width: fit-content;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    border: 2px solid $button-border-color;
+}

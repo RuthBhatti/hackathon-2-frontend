@@ -6,7 +6,9 @@ const Category = ({ categoryData, setQuestion }) => {
 return (
 <>
     <section className="category">
-    <header>{categoryData.topic}</header>
+    <header className="category__name">
+        <p>{categoryData.topic}</p>
+    </header>
     {categoryData.questions.map((question) => {
         return (
         <Link
@@ -15,7 +17,7 @@ return (
             className="price-button__text"
         >
             <article className="price-button">
-                <h2>{question.points}</h2>
+                <h2>${question.points}</h2>
             </article>
         </Link>
         );

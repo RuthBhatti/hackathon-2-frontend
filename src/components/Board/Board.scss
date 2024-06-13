@@ -1,9 +1,11 @@
 @use '../../styles/partials/typography'as *;
 @use '../../styles/partials/variable' as *;
 
-.Title{
+.header {
     font-family: 'Jeopardy';
+    font-size: 4rem;
 }
 .price-box{
     display: flex;
+    justify-content: center;
 }

@@ -1,7 +1,9 @@
+import './Score.scss';
+
 const Score = ({ score }) => {
   return (
     <>
-    <h2>Your current score is {score}</h2>
+    <h2 className='score'>Your current score is {score}</h2>
     </>
   )
 }
