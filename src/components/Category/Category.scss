@@ -48,6 +48,19 @@
         color: $button-hover-text-color;
     }
 
+    &--clicked {
+        color: transparent;
+        background-color: transparent;
+        border: none;
+        transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+
+        &:hover {
+            background-color: transparent;
+            border: none;
+            color: transparent;
+        }
+    }
+
     &__text {
         text-decoration: none;
     }

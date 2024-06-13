@@ -18,7 +18,7 @@ const navigate =useNavigate();
     console.log(currentQ)
 
 const clickHandler = (event) => {
-    event.preventDefault();
+    event.preventDefault()
     const answer = event.target.innerText;
     if (answer === currentQ.correctAnswer)
         {
