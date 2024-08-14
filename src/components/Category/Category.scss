@@ -1,0 +1,67 @@
+@use '../../styles/partials/typography'as *; 
+@use '../../styles/partials/variable' as *;
+
+.category {
+    width: 20rem;
+
+    &__name {
+        font-family: 'Price';
+        border: 2px solid $button-border-color;
+        background-color: white;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-weight: 600;
+        padding: 0;
+        margin: 1rem;
+        font-size: 1rem;
+        height: 5rem;
+
+        p {
+            margin: 0;
+            padding: .5rem;
+            display: flex;
+        }
+    }
+}
+
+.price-button {
+    font-family: 'Price';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $button-bg-color;
+    border: 2px solid $button-border-color;
+    color: $button-text-color;
+    padding: 10px 20px;
+    font-size: 16px;
+    height: 5rem;
+    cursor: pointer;
+    margin: 1rem;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+
+    &:hover {
+        background-color: $button-hover-bg-color;
+        border-color: $button-hover-border-color;
+        color: $button-hover-text-color;
+    }
+
+    &--clicked {
+        color: transparent;
+        background-color: transparent;
+        border: none;
+        transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+
+        &:hover {
+            background-color: transparent;
+            border: none;
+            color: transparent;
+        }
+    }
+
+    &__text {
+        text-decoration: none;
+    }
+}
