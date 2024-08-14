@@ -1,4 +1,6 @@
-# 🎮 Hackathon Jeopardy Frontend
+<div align="center">
+  <h1>🎮 Hackathon Jeopardy Frontend</h1>
+</div>
 
 Hackathon Jeopardy is an engaging and interactive game platform developed using React, SCSS, JavaScript, and HTML. This platform offers a seamless and responsive user experience, allowing users to enjoy the Jeopardy game across various devices.
 
