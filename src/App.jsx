@@ -1,20 +1,38 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./App.scss";
-import Board from "./components/Board/Board";
-import Question from "./components/Question/Question";
-import axios from "axios";
+import Modal from "./components/Modal/Modal";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
 
 function App() {
+  const [selectedQuestion, setSelectedQuestion] = useState(null);
+
+  const handleQuestionClick = (question) => {
+    setSelectedQuestion(question);
+  };
+
+  const closeModal = () => {
+    setSelectedQuestion(null);
+  };
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<HomePage />}/>
-        <Route path='/:questionInfo' element={<HomePage />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <HomePage onQuestionClick={handleQuestionClick} />
+            }
+          />
+          <Route path="/:questionInfo" element={<HomePage />} />
+        </Routes>
+      </BrowserRouter>
+
+      <Modal show={!!selectedQuestion} onClose={closeModal}>
+        {selectedQuestion && <Question question={selectedQuestion} />}
+      </Modal>
+    </div>
   );
 }
 
