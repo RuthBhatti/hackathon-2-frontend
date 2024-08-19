@@ -1,7 +1,6 @@
-Here's the updated `README.md` for the front-end of your project without the Contact and License sections:
-
-```markdown
-# 🎮 Hackathon Jeopardy Frontend
+<div align="center">
+  <h1>🎮 Hackathon Jeopardy Frontend</h1>
+</div>
 
 Hackathon Jeopardy is an engaging and interactive game platform developed using React, SCSS, JavaScript, and HTML. This platform offers a seamless and responsive user experience, allowing users to enjoy the Jeopardy game across various devices.
 
@@ -60,6 +59,3 @@ The front-end integrates seamlessly with the Hackathon Jeopardy API for fetching
 - 🎨 **SCSS:** For styling and UI consistency.
 - 💻 **JavaScript:** For functionality and game logic.
 - 📝 **HTML:** For the basic structure.
-```
-
-This streamlined `README.md` focuses on the essential details for setting up and running the front-end portion of your project.
